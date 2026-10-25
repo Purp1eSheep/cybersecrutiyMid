@@ -1,0 +1,2459 @@
+{
+  "meta": {
+    "title": "資安期中考題庫",
+    "version": 3,
+    "updated": "2026-10-25"
+  },
+  "questions": [
+    {
+      "id": "q026",
+      "type": "single",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 1",
+      "question": "CIA 中的 C 代表什麼？",
+      "options": [
+        {
+          "key": "A",
+          "text": "完整性"
+        },
+        {
+          "key": "B",
+          "text": "機密性"
+        },
+        {
+          "key": "C",
+          "text": "可用性"
+        },
+        {
+          "key": "D",
+          "text": "可稽核性"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "CIA 三要素為機密性（Confidentiality）、完整性（Integrity）、可用性（Availability），C 即機密性，指僅有被授權者能存取資訊。"
+    },
+    {
+      "id": "q027",
+      "type": "single",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 2",
+      "question": "某網站因 DDoS 而無法提供服務，主要影響哪項需求？",
+      "options": [
+        {
+          "key": "A",
+          "text": "機密性"
+        },
+        {
+          "key": "B",
+          "text": "不可否認性"
+        },
+        {
+          "key": "C",
+          "text": "可用性"
+        },
+        {
+          "key": "D",
+          "text": "身分鑑別"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "DDoS 使網站無法回應正常請求，服務中斷，直接損害可用性；機密性與不可否認性並非主要受影響項目。"
+    },
+    {
+      "id": "q028",
+      "type": "single",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 3",
+      "question": "匯款金額遭未授權者修改，主要破壞哪項需求？",
+      "options": [
+        {
+          "key": "A",
+          "text": "完整性"
+        },
+        {
+          "key": "B",
+          "text": "可用性"
+        },
+        {
+          "key": "C",
+          "text": "機密性"
+        },
+        {
+          "key": "D",
+          "text": "隱私權"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "匯款金額被未授權修改，代表資料失去正確性與未經授權的變更，屬於完整性破壞。"
+    },
+    {
+      "id": "q029",
+      "type": "single",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 4",
+      "question": "員工誤刪重要資料屬於何種威脅？",
+      "options": [
+        {
+          "key": "A",
+          "text": "天然且蓄意"
+        },
+        {
+          "key": "B",
+          "text": "人為且無意"
+        },
+        {
+          "key": "C",
+          "text": "天然且被動"
+        },
+        {
+          "key": "D",
+          "text": "人為且必然蓄意"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "員工誤刪資料是人所造成但無惡意，屬人為且無意的威脅；並非天然災害，也不是蓄意攻擊。"
+    },
+    {
+      "id": "q030",
+      "type": "single",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 5",
+      "question": "攻擊者只偷看未加密通訊而不改變內容，較接近哪類攻擊？",
+      "options": [
+        {
+          "key": "A",
+          "text": "主動攻擊"
+        },
+        {
+          "key": "B",
+          "text": "實體破壞"
+        },
+        {
+          "key": "C",
+          "text": "被動攻擊"
+        },
+        {
+          "key": "D",
+          "text": "阻斷服務"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "只竊聽未加密通訊而不更動內容，不影響系統運作，屬被動攻擊（如竊聽、流量分析）。"
+    },
+    {
+      "id": "q031",
+      "type": "single",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 6",
+      "question": "哪項最適合用來保護學生只能查看自己的成績？",
+      "options": [
+        {
+          "key": "A",
+          "text": "公開所有成績"
+        },
+        {
+          "key": "B",
+          "text": "停用稽核"
+        },
+        {
+          "key": "C",
+          "text": "取消登入"
+        },
+        {
+          "key": "D",
+          "text": "權限控管與最小權限"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "以權限控管搭配最小權限原則，讓學生僅能存取自身成績，兼顧機密性與存取控制；公開成績或取消登入反而破壞機密性。"
+    },
+    {
+      "id": "q032",
+      "type": "single",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 7",
+      "question": "下列何者屬於弱點，而不是已發生的攻擊？",
+      "options": [
+        {
+          "key": "A",
+          "text": "管理員使用預設密碼"
+        },
+        {
+          "key": "B",
+          "text": "駭客竊取資料"
+        },
+        {
+          "key": "C",
+          "text": "網站遭竄改"
+        },
+        {
+          "key": "D",
+          "text": "伺服器遭勒索"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "使用預設密碼是系統設定上的可被利用之弱點，尚未實際造成事件；其餘選項皆為已發生的攻擊或事件結果。"
+    },
+    {
+      "id": "q033",
+      "type": "single",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 8",
+      "question": "在風險分析中，應同時考量哪兩項？",
+      "options": [
+        {
+          "key": "A",
+          "text": "螢幕大小與品牌"
+        },
+        {
+          "key": "B",
+          "text": "事件機率與可能損失"
+        },
+        {
+          "key": "C",
+          "text": "員工人數與樓層"
+        },
+        {
+          "key": "D",
+          "text": "資料筆數與檔名"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "風險通常以「事件發生機率」乘上「可能造成的損失或衝擊」來評估，兩者須同時考量。"
+    },
+    {
+      "id": "q034",
+      "type": "single",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 9",
+      "question": "下列何者最能提供交易不可否認性的證據基礎？",
+      "options": [
+        {
+          "key": "A",
+          "text": "關閉紀錄"
+        },
+        {
+          "key": "B",
+          "text": "共用帳號"
+        },
+        {
+          "key": "C",
+          "text": "可驗證的數位簽章"
+        },
+        {
+          "key": "D",
+          "text": "刪除交易明細"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "可驗證的數位簽章能證明訊息來源與內容未遭竄改，是支持不可否認性的主要技術證據；關閉紀錄或共用帳號則無法追溯責任。"
+    },
+    {
+      "id": "q035",
+      "type": "single",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 10",
+      "question": "資訊安全保護的範圍最適合如何描述？",
+      "options": [
+        {
+          "key": "A",
+          "text": "只保護伺服器"
+        },
+        {
+          "key": "B",
+          "text": "只阻擋外部駭客"
+        },
+        {
+          "key": "C",
+          "text": "只管理密碼"
+        },
+        {
+          "key": "D",
+          "text": "資料、系統與營運"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "資訊安全涵蓋資料、系統與營運流程的保護，並非僅限伺服器、外部駭客或密碼管理。"
+    },
+    {
+      "id": "q036",
+      "type": "single",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 11",
+      "question": "ISO/IEC 27001 主要對應哪項？",
+      "options": [
+        {
+          "key": "A",
+          "text": "資訊安全管理系統要求"
+        },
+        {
+          "key": "B",
+          "text": "網路封包格式"
+        },
+        {
+          "key": "C",
+          "text": "資料庫查詢語法"
+        },
+        {
+          "key": "D",
+          "text": "加密金鑰長度表"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "ISO/IEC 27001 規範資訊安全管理系統（ISMS）的要求，供組織建立、運作與持續改善資安管理。"
+    },
+    {
+      "id": "q037",
+      "type": "single",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 12",
+      "question": "下列何者最接近威脅分析的問題？",
+      "options": [
+        {
+          "key": "A",
+          "text": "系統哪裡可能被利用、由誰如何攻擊？"
+        },
+        {
+          "key": "B",
+          "text": "網站字體是否好看？"
+        },
+        {
+          "key": "C",
+          "text": "資料庫有多少欄位？"
+        },
+        {
+          "key": "D",
+          "text": "員工午餐如何安排？"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "威脅分析在辨識系統可能被利用的弱點，以及可能的攻擊者、動機與手法；其餘選項與資安威脅無關。"
+    },
+    {
+      "id": "q038",
+      "type": "single",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 13",
+      "question": "發現帳號共用與資料誤寄問題，哪個方案最合理？",
+      "options": [
+        {
+          "key": "A",
+          "text": "只購買更快主機"
+        },
+        {
+          "key": "B",
+          "text": "停用全部備份"
+        },
+        {
+          "key": "C",
+          "text": "個人帳號、適當授權與教育訓練"
+        },
+        {
+          "key": "D",
+          "text": "公開所有資料"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "帳號共用與資料誤寄的根因在於身分歸屬與作業習慣，採個人帳號、適當授權與教育訓練才能對症下藥。"
+    },
+    {
+      "id": "q039",
+      "type": "tf",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 76",
+      "question": "CIA 的 Availability 指系統在需要時能正常提供服務。",
+      "answer": [
+        "T"
+      ],
+      "explanation": "可用性指系統與資料在需要時能被授權使用者正常存取與使用，敘述正確。"
+    },
+    {
+      "id": "q040",
+      "type": "tf",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 77",
+      "question": "只要安裝防火牆，就能解決所有資訊安全問題。",
+      "answer": [
+        "F"
+      ],
+      "explanation": "防火牆僅是邊界防護的一環，無法涵蓋內部人員、端點、應用程式與社交工程等風險，資安需多層次防護與管理。"
+    },
+    {
+      "id": "q041",
+      "type": "tf",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 78",
+      "question": "攻擊者未授權修改網站內容，主要涉及完整性問題。",
+      "answer": [
+        "T"
+      ],
+      "explanation": "網站內容遭未授權竄改，代表資料正確性與未經授權變更受破壞，主要涉及完整性。"
+    },
+    {
+      "id": "q042",
+      "type": "tf",
+      "chapter": "資訊安全簡介",
+      "source": "questions/Chapter_1.md 題號 79",
+      "question": "風險分析只需考慮攻擊發生機率，不必考慮損失。",
+      "answer": [
+        "F"
+      ],
+      "explanation": "風險分析須同時評估發生機率與可能損失（衝擊），只看機率無法反映實際風險大小。"
+    },
+    {
+      "id": "q043",
+      "type": "single",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 14",
+      "question": "資訊中心的核心任務不包括哪項？",
+      "options": [
+        {
+          "key": "A",
+          "text": "維持服務"
+        },
+        {
+          "key": "B",
+          "text": "維護安全"
+        },
+        {
+          "key": "C",
+          "text": "支援持續運作"
+        },
+        {
+          "key": "D",
+          "text": "保證永不發生故障"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "資訊中心的核心任務是維持服務、維護安全並支援營運持續，但不可能「保證永不發生故障」；資安管理追求的是降低風險與可回復性，而非零故障的絕對保證。"
+    },
+    {
+      "id": "q044",
+      "type": "single",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 15",
+      "question": "機房突然停電時，應優先確認哪項設備是否接手？",
+      "options": [
+        {
+          "key": "A",
+          "text": "UPS"
+        },
+        {
+          "key": "B",
+          "text": "投影機"
+        },
+        {
+          "key": "C",
+          "text": "印表機"
+        },
+        {
+          "key": "D",
+          "text": "掃描器"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "停電當下最優先確認 UPS（不斷電系統）是否接手供電，以維持關鍵設備運作並爭取安全關機或啟動備援電源的時間；投影機、印表機、掃描器非關鍵設備。"
+    },
+    {
+      "id": "q045",
+      "type": "single",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 16",
+      "question": "溫濕度控制最直接是為了降低哪項風險？",
+      "options": [
+        {
+          "key": "A",
+          "text": "密碼猜測"
+        },
+        {
+          "key": "B",
+          "text": "設備環境故障"
+        },
+        {
+          "key": "C",
+          "text": "釣魚郵件"
+        },
+        {
+          "key": "D",
+          "text": "帳密填充"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "溫濕度控制直接針對機房環境，避免過熱、結露、靜電等造成設備異常或壽命縮短，因此最直接降低的是設備環境故障風險。"
+    },
+    {
+      "id": "q046",
+      "type": "single",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 17",
+      "question": "伺服器備援主要提升哪項 CIA 需求？",
+      "options": [
+        {
+          "key": "A",
+          "text": "機密性"
+        },
+        {
+          "key": "B",
+          "text": "不可否認性"
+        },
+        {
+          "key": "C",
+          "text": "可用性"
+        },
+        {
+          "key": "D",
+          "text": "身分鑑別"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "伺服器備援讓主要系統失效時可由備援接手，確保服務不中斷，主要提升 CIA 中的可用性（Availability）。機密性、不可否認性與身分鑑別並非備援的重點。"
+    },
+    {
+      "id": "q047",
+      "type": "single",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 18",
+      "question": "下列何者屬於資訊中心的人員安全管理？",
+      "options": [
+        {
+          "key": "A",
+          "text": "移除所有權限"
+        },
+        {
+          "key": "B",
+          "text": "取消教育訓練"
+        },
+        {
+          "key": "C",
+          "text": "共用管理員帳號"
+        },
+        {
+          "key": "D",
+          "text": "角色分工與安全訓練"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "人員安全管理包含職務角色分工、最小權限與安全意識訓練；「移除所有權限」「取消教育訓練」「共用管理員帳號」皆違反least privilege 與可歸責性原則。"
+    },
+    {
+      "id": "q048",
+      "type": "single",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 19",
+      "question": "完整備份（Full Backup）的特點是什麼？",
+      "options": [
+        {
+          "key": "A",
+          "text": "備份選定範圍內的全部資料"
+        },
+        {
+          "key": "B",
+          "text": "只備份上次增量後變更"
+        },
+        {
+          "key": "C",
+          "text": "只備份昨日登入紀錄"
+        },
+        {
+          "key": "D",
+          "text": "不需要儲存空間"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "完整備份是將選定範圍內的全部資料備份一份，還原最單純但佔用空間與時間最多；選項 B 描述的是增量備份，D 明顯錯誤。"
+    },
+    {
+      "id": "q049",
+      "type": "single",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 20",
+      "question": "差異備份（Differential Backup）通常備份什麼？",
+      "options": [
+        {
+          "key": "A",
+          "text": "自上次完整備份以來的變更"
+        },
+        {
+          "key": "B",
+          "text": "自上次任意備份以來的變更"
+        },
+        {
+          "key": "C",
+          "text": "只備份作業系統"
+        },
+        {
+          "key": "D",
+          "text": "只備份空資料夾"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "差異備份備份「自上次完整備份以來」所有變更的資料，隨時間累積變大，但還原只需完整備份加一份差異備份。選項 B 是增量備份的定義。"
+    },
+    {
+      "id": "q050",
+      "type": "single",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 21",
+      "question": "增量備份（Incremental Backup）通常備份什麼？",
+      "options": [
+        {
+          "key": "A",
+          "text": "所有歷史資料"
+        },
+        {
+          "key": "B",
+          "text": "自上次備份以來的變更"
+        },
+        {
+          "key": "C",
+          "text": "固定只備份 1 GB"
+        },
+        {
+          "key": "D",
+          "text": "只備份已刪除檔案"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "增量備份只備份自「上一次備份」（不論完整、差異或增量）之後有變更的資料，備份量最小，但還原需依序套用完整備份與所有增量。"
+    },
+    {
+      "id": "q051",
+      "type": "single",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 22",
+      "question": "異地備份主要可降低哪項風險？",
+      "options": [
+        {
+          "key": "A",
+          "text": "密碼長度不足"
+        },
+        {
+          "key": "B",
+          "text": "軟體版本太新"
+        },
+        {
+          "key": "C",
+          "text": "同一地點災害造成原件與備份同時損毀"
+        },
+        {
+          "key": "D",
+          "text": "使用者忘記登出"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "異地備份把備份資料放到不同地理位置，避免火災、水災、地震等同一地點災害同時毀損原始資料與備份，是最直接的異地備援效益。"
+    },
+    {
+      "id": "q052",
+      "type": "single",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 23",
+      "question": "使用 ping 進行初步故障排除，主要測試什麼？",
+      "options": [
+        {
+          "key": "A",
+          "text": "資料庫資料正確性"
+        },
+        {
+          "key": "B",
+          "text": "硬碟是否加密"
+        },
+        {
+          "key": "C",
+          "text": "使用者是否授權"
+        },
+        {
+          "key": "D",
+          "text": "目標主機的基本網路可達性"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "ping 利用 ICMP 測試目標主機在網路上是否可達與回應時間，屬網路層連通性檢查；無法證明資料庫正確性、硬碟加密或使用者授權狀態。"
+    },
+    {
+      "id": "q053",
+      "type": "single",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 24",
+      "question": "對於報廢的敏感資料儲存媒體，何種處置較合適？",
+      "options": [
+        {
+          "key": "A",
+          "text": "依資料敏感度安全清除或銷毀"
+        },
+        {
+          "key": "B",
+          "text": "直接送人"
+        },
+        {
+          "key": "C",
+          "text": "只刪除桌面捷徑"
+        },
+        {
+          "key": "D",
+          "text": "公開拍賣不處理"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "報廢媒體應依資料敏感度採取安全抹除、消磁或實體銷毀等程序，確保資料無法被還原；直接送人、只刪捷徑或未處理即拍賣都會造成資料外洩。"
+    },
+    {
+      "id": "q054",
+      "type": "single",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 25",
+      "question": "機房的防火、供電與網路備援共同支援何種目標？",
+      "options": [
+        {
+          "key": "A",
+          "text": "降低可用性"
+        },
+        {
+          "key": "B",
+          "text": "營運持續性"
+        },
+        {
+          "key": "C",
+          "text": "取消資安管理"
+        },
+        {
+          "key": "D",
+          "text": "提高單點故障"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "防火、供電備援與網路備援都是為了讓機房在災害或異常下仍能提供服務，共同支援營運持續性（Business Continuity）目標，而非降低可用性或提高單點故障。"
+    },
+    {
+      "id": "q055",
+      "type": "tf",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 80",
+      "question": "機房停電與網路斷線都可能影響資訊系統可用性。",
+      "answer": [
+        "T"
+      ],
+      "explanation": "停電會使設備無法運作，網路斷線則使服務無法連線，兩者都會直接衝擊資訊系統的可用性，因此敘述正確。"
+    },
+    {
+      "id": "q056",
+      "type": "tf",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 81",
+      "question": "UPS 可以完全取代長時間備援發電及災難復原規劃。",
+      "answer": [
+        "F"
+      ],
+      "explanation": "UPS 只能提供短時間電力，用於緩衝與安全關機或等待發電機啟動，無法取代長時間備援發電、異地備援與災難復原規劃。"
+    },
+    {
+      "id": "q057",
+      "type": "tf",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 82",
+      "question": "異地備份可降低單一地點災害造成的資料損失風險。",
+      "answer": [
+        "T"
+      ],
+      "explanation": "異地備份將副本存放於不同地點，可避免單一地點災害同時損毀原件與備份，有效降低資料全毀的風險。"
+    },
+    {
+      "id": "q058",
+      "type": "tf",
+      "chapter": "資訊中心管理與實體安全",
+      "source": "questions/Chapter_2.md 題號 83",
+      "question": "Ping 成功即可證明應用程式、資料庫與授權功能完全正常。",
+      "answer": [
+        "F"
+      ],
+      "explanation": "ping 成功僅代表網路層可達，應用程式、資料庫服務、權限授權等仍可能異常，需再搭配服務埠測試、應用層檢查與日誌分析才能確認。"
+    },
+    {
+      "id": "q059",
+      "type": "single",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 26",
+      "question": "Identity 與 Authentication 的正確區別是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "兩者完全相同"
+        },
+        {
+          "key": "B",
+          "text": "Identity 是加密"
+        },
+        {
+          "key": "C",
+          "text": "Identity 是聲稱身分，Authentication 是驗證身分"
+        },
+        {
+          "key": "D",
+          "text": "Authentication 是授權"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "Identity 是使用者「聲稱」自己是誰（如帳號名稱），Authentication 才是驗證這項聲稱是否為真；授權（Authorization）是驗證通過後決定可做什麼，因此 D 錯。"
+    },
+    {
+      "id": "q060",
+      "type": "single",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 27",
+      "question": "「密碼＋PIN」通常不算真正的 MFA，原因是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "都是知識因素"
+        },
+        {
+          "key": "B",
+          "text": "都是持有因素"
+        },
+        {
+          "key": "C",
+          "text": "都是生物因素"
+        },
+        {
+          "key": "D",
+          "text": "不需要輸入帳號"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "密碼與 PIN 都屬於「你知道什麼」的知識因素，本質上是同一類因素，因此不構成真正的多因子認證。B、C 與事實不符。"
+    },
+    {
+      "id": "q061",
+      "type": "single",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 28",
+      "question": "哪一項屬於 Something You Have？",
+      "options": [
+        {
+          "key": "A",
+          "text": "生日"
+        },
+        {
+          "key": "B",
+          "text": "指紋"
+        },
+        {
+          "key": "C",
+          "text": "安全問題答案"
+        },
+        {
+          "key": "D",
+          "text": "硬體安全金鑰"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "硬體安全金鑰是實體持有物，屬於 Something You Have；生日與安全問題答案屬知識因素，指紋屬生物因素。"
+    },
+    {
+      "id": "q062",
+      "type": "single",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 29",
+      "question": "使用外洩帳密嘗試登入其他網站稱為？",
+      "options": [
+        {
+          "key": "A",
+          "text": "字典攻擊"
+        },
+        {
+          "key": "B",
+          "text": "帳密填充"
+        },
+        {
+          "key": "C",
+          "text": "阻斷服務"
+        },
+        {
+          "key": "D",
+          "text": "資料遮罩"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "拿一處外洩的帳號密碼去嘗試登入其他網站即為帳密填充（credential stuffing），利用使用者跨站重複使用密碼的行為。"
+    },
+    {
+      "id": "q063",
+      "type": "single",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 30",
+      "question": "使用常見單字及常見密碼清單嘗試登入稱為？",
+      "options": [
+        {
+          "key": "A",
+          "text": "重播攻擊"
+        },
+        {
+          "key": "B",
+          "text": "中間人攻擊"
+        },
+        {
+          "key": "C",
+          "text": "字典攻擊"
+        },
+        {
+          "key": "D",
+          "text": "側錄封包"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "以常見單字與常見密碼清單逐一嘗試登入稱為字典攻擊；重播、中間人與側錄封包都是攔截或重送通訊的手法，與猜測密碼不同。"
+    },
+    {
+      "id": "q064",
+      "type": "single",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 31",
+      "question": "攻擊者假冒網站誘使使用者輸入 OTP，屬於？",
+      "options": [
+        {
+          "key": "A",
+          "text": "釣魚攻擊"
+        },
+        {
+          "key": "B",
+          "text": "備份失敗"
+        },
+        {
+          "key": "C",
+          "text": "安全稽核"
+        },
+        {
+          "key": "D",
+          "text": "實體存取控制"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "假冒合法網站誘騙使用者輸入 OTP 是網路釣魚（phishing）的典型手法，可即時竊取一次性密碼並繞過 MFA。"
+    },
+    {
+      "id": "q065",
+      "type": "single",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 32",
+      "question": "MFA Fatigue 主要利用哪項弱點？",
+      "options": [
+        {
+          "key": "A",
+          "text": "硬碟壞軌"
+        },
+        {
+          "key": "B",
+          "text": "過期憑證"
+        },
+        {
+          "key": "C",
+          "text": "加密金鑰太長"
+        },
+        {
+          "key": "D",
+          "text": "大量推播使使用者誤按核准"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "MFA Fatigue（推播轟炸）是連續送出大量驗證推播，讓使用者在不堪其擾或疏忽下誤按「核准」，弱點在於使用者的判斷而非硬體或加密。"
+    },
+    {
+      "id": "q066",
+      "type": "single",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 33",
+      "question": "Risk-Based Authentication 的核心概念是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "所有登入永久免驗證"
+        },
+        {
+          "key": "B",
+          "text": "依登入情境風險調整驗證強度"
+        },
+        {
+          "key": "C",
+          "text": "僅在白天允許登入"
+        },
+        {
+          "key": "D",
+          "text": "所有人共用帳號"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "風險導向認證依登入的地點、裝置、行為等情境評估風險，動態調整驗證強度，高風險時要求更嚴格的驗證。"
+    },
+    {
+      "id": "q067",
+      "type": "single",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 34",
+      "question": "FIDO 的私鑰一般應如何處理？",
+      "options": [
+        {
+          "key": "A",
+          "text": "貼在網站公告"
+        },
+        {
+          "key": "B",
+          "text": "傳給每個服務商"
+        },
+        {
+          "key": "C",
+          "text": "留在使用者裝置或安全驗證器"
+        },
+        {
+          "key": "D",
+          "text": "公開寄送"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "FIDO 採非對稱式金鑰，私鑰只留在使用者裝置或安全驗證器中且不離開，伺服器僅保存公鑰，因此私鑰絕不可公開或傳送給服務商。"
+    },
+    {
+      "id": "q068",
+      "type": "single",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 35",
+      "question": "FIDO 驗證中的 Challenge 主要用途是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "提供一次性待簽署挑戰資料"
+        },
+        {
+          "key": "B",
+          "text": "存放明文密碼"
+        },
+        {
+          "key": "C",
+          "text": "刪除伺服器紀錄"
+        },
+        {
+          "key": "D",
+          "text": "直接取代授權政策"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "伺服器送出一次性的 challenge，使用者端以私鑰對其簽章，伺服器再用公鑰驗證，可防止重播；challenge 並不存放密碼或取代授權政策。"
+    },
+    {
+      "id": "q069",
+      "type": "single",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 36",
+      "question": "Kerberos 主要透過什麼方式支援認證？",
+      "options": [
+        {
+          "key": "A",
+          "text": "公開分享密碼"
+        },
+        {
+          "key": "B",
+          "text": "停用伺服器"
+        },
+        {
+          "key": "C",
+          "text": "只比對 IP"
+        },
+        {
+          "key": "D",
+          "text": "票證（Ticket）"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "Kerberos 以票證（Ticket）機制運作，使用者先向 KDC 取得票證，再憑票證存取各項服務，過程中不需在網路上傳送密碼。"
+    },
+    {
+      "id": "q070",
+      "type": "single",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 37",
+      "question": "Kerberos 的重要限制之一是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "無法使用帳號"
+        },
+        {
+          "key": "B",
+          "text": "依賴時間同步與集中式認證服務"
+        },
+        {
+          "key": "C",
+          "text": "完全不需要信任中心"
+        },
+        {
+          "key": "D",
+          "text": "不涉及任何金鑰"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Kerberos 票證具有時效，需各主機時間大致同步，且高度依賴 KDC 這個集中式認證服務，一旦 KDC 失效或時間偏差過大即無法認證。"
+    },
+    {
+      "id": "q071",
+      "type": "tf",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 84",
+      "question": "使用者成功通過 Authentication 後，仍需進行 Authorization。",
+      "answer": [
+        "T"
+      ],
+      "explanation": "Authentication 只確認身分真偽，通過後仍須由 Authorization 決定該使用者擁有哪些資源與操作權限，兩者是先後且不同的概念。"
+    },
+    {
+      "id": "q072",
+      "type": "tf",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 85",
+      "question": "密碼加 PIN 通常屬於兩個不同的認證因素。",
+      "answer": [
+        "F"
+      ],
+      "explanation": "密碼與 PIN 都屬於知識因素（Something You Know），只是兩組知識，並非兩種不同類型的認證因素，所以不構成 MFA。"
+    },
+    {
+      "id": "q073",
+      "type": "tf",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 86",
+      "question": "FIDO 驗證可利用私鑰對伺服器挑戰值進行簽章。",
+      "answer": [
+        "T"
+      ],
+      "explanation": "FIDO 驗證時，驗證器以裝置內的私鑰對伺服器提供的挑戰值簽章，伺服器再以對應公鑰驗證簽章，證明持有私鑰。"
+    },
+    {
+      "id": "q074",
+      "type": "tf",
+      "chapter": "使用者身分鑑別",
+      "source": "questions/Chapter_3.md 題號 87",
+      "question": "Kerberos 的票證機制完全不依賴時間同步。",
+      "answer": [
+        "F"
+      ],
+      "explanation": "Kerberos 票證有有效期限，相當依賴時間同步；時間偏差過大會導致票證被視為無效，因此「完全不依賴時間同步」為錯誤敘述。"
+    },
+    {
+      "id": "q075",
+      "type": "single",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 38",
+      "question": "存取控制最核心要回答的問題是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "CPU 有多快"
+        },
+        {
+          "key": "B",
+          "text": "資料庫有多少筆"
+        },
+        {
+          "key": "C",
+          "text": "誰可對何資源執行何動作"
+        },
+        {
+          "key": "D",
+          "text": "網頁使用哪種顏色"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "存取控制的本質就是決定「主體（誰）」對「客體（何資源）」可執行「何種動作」，因此核心問題是誰可對何資源執行何動作；其餘選項屬效能、資料量或外觀，與授權決策無關。"
+    },
+    {
+      "id": "q076",
+      "type": "single",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 39",
+      "question": "Access Control 的 Subject 通常指？",
+      "options": [
+        {
+          "key": "A",
+          "text": "提出存取要求的使用者或程序"
+        },
+        {
+          "key": "B",
+          "text": "被存取的檔案"
+        },
+        {
+          "key": "C",
+          "text": "存取規則文件"
+        },
+        {
+          "key": "D",
+          "text": "備份磁碟"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "在存取控制模型中，Subject 是主動發起存取要求的一方，通常是使用者、程序或服務；而被存取的檔案屬於 Object（客體），故 B 錯。"
+    },
+    {
+      "id": "q077",
+      "type": "single",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 40",
+      "question": "DAC 的主要特徵是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "由中央強制標籤決定"
+        },
+        {
+          "key": "B",
+          "text": "資源擁有者可設定存取權限"
+        },
+        {
+          "key": "C",
+          "text": "依工作角色統一指派"
+        },
+        {
+          "key": "D",
+          "text": "所有人皆可存取"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "DAC（Discretionary Access Control，任意存取控制）由資源擁有者自行決定誰可以使用其資源及使用方式，例如 Unix 檔案權限由檔主 chmod 設定。"
+    },
+    {
+      "id": "q078",
+      "type": "single",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 41",
+      "question": "MAC 的主要特徵是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "任何使用者都能改標籤"
+        },
+        {
+          "key": "B",
+          "text": "只使用密碼"
+        },
+        {
+          "key": "C",
+          "text": "沒有分類等級"
+        },
+        {
+          "key": "D",
+          "text": "依安全標籤與許可等級強制控制"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "MAC（Mandatory Access Control，強制存取控制）由系統依安全標籤與主體許可等級（clearance）強制判定，使用者無法自行更改標籤，故 A 錯。"
+    },
+    {
+      "id": "q079",
+      "type": "single",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 42",
+      "question": "RBAC 的權限主要指派給什麼？",
+      "options": [
+        {
+          "key": "A",
+          "text": "網路線"
+        },
+        {
+          "key": "B",
+          "text": "IP 封包"
+        },
+        {
+          "key": "C",
+          "text": "角色"
+        },
+        {
+          "key": "D",
+          "text": "鍵盤"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "RBAC（Role-Based Access Control）以角色作為權限的中介：權限先授予角色，再把角色指派給使用者，藉此簡化管理並避免逐一授權。"
+    },
+    {
+      "id": "q080",
+      "type": "single",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 43",
+      "question": "Bell–LaPadula 主要關注哪項安全目標？",
+      "options": [
+        {
+          "key": "A",
+          "text": "機密性"
+        },
+        {
+          "key": "B",
+          "text": "效能"
+        },
+        {
+          "key": "C",
+          "text": "能源效率"
+        },
+        {
+          "key": "D",
+          "text": "資料壓縮"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Bell–LaPadula 模型以保護機密性為目標，透過禁止向上讀取與向下寫入，防止機密資訊外洩；它並不處理完整性（那是 Biba 模型）或效能議題。"
+    },
+    {
+      "id": "q081",
+      "type": "single",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 44",
+      "question": "Bell–LaPadula 的 No Read Up 意味著？",
+      "options": [
+        {
+          "key": "A",
+          "text": "高權限者不可讀低密資料"
+        },
+        {
+          "key": "B",
+          "text": "低許可等級者不可讀高機密資料"
+        },
+        {
+          "key": "C",
+          "text": "所有人不可讀資料"
+        },
+        {
+          "key": "D",
+          "text": "只有管理員可寫入"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "No Read Up（simple security property）指主體不可讀取高於自身許可等級的資料，即低許可等級者不能讀高機密資料；A 的方向描述錯誤。"
+    },
+    {
+      "id": "q082",
+      "type": "single",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 45",
+      "question": "Bell–LaPadula 的 No Write Down 主要避免？",
+      "options": [
+        {
+          "key": "A",
+          "text": "資料遺失"
+        },
+        {
+          "key": "B",
+          "text": "伺服器停機"
+        },
+        {
+          "key": "C",
+          "text": "網路壅塞"
+        },
+        {
+          "key": "D",
+          "text": "高機密資訊向低等級流出"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "No Write Down（*-property）禁止高階主體將資訊寫入低等級客體，避免機密資料被降級流出或透過低權限管道洩漏。"
+    },
+    {
+      "id": "q083",
+      "type": "single",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 46",
+      "question": "最小權限原則的正確做法是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "所有帳號給管理員權限"
+        },
+        {
+          "key": "B",
+          "text": "所有資料可公開"
+        },
+        {
+          "key": "C",
+          "text": "只給完成工作所需權限"
+        },
+        {
+          "key": "D",
+          "text": "取消帳號審核"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "最小權限原則要求帳號僅具備完成本職工作所必需的最小權限，並隨職務調整；全面給管理員權限會使單一帳號遭駭即造成全系統風險。"
+    },
+    {
+      "id": "q084",
+      "type": "single",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 47",
+      "question": "Zero Trust 的核心精神是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "永不預設信任，持續驗證"
+        },
+        {
+          "key": "B",
+          "text": "內網一律可信"
+        },
+        {
+          "key": "C",
+          "text": "驗證一次後永久可信"
+        },
+        {
+          "key": "D",
+          "text": "只要 VPN 就不需授權"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Zero Trust 主張「永不信任、持續驗證」，不因位於內網或已通過一次驗證就給予長期信任；B、C、D 都違反此精神。"
+    },
+    {
+      "id": "q085",
+      "type": "single",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 48",
+      "question": "Linux 權限 r、w、x 對應的數值是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "1、2、4"
+        },
+        {
+          "key": "B",
+          "text": "4、2、1"
+        },
+        {
+          "key": "C",
+          "text": "2、4、1"
+        },
+        {
+          "key": "D",
+          "text": "7、5、3"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Linux 權限數值以二進位位元計算：r=4、w=2、x=1，故讀寫執行依序為 4、2、1，三者相加即為該類別（擁有者／群組／其他）的權限數字。"
+    },
+    {
+      "id": "q086",
+      "type": "single",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 49",
+      "question": "Linux 權限 750 代表什麼？",
+      "options": [
+        {
+          "key": "A",
+          "text": "擁有者 rw、群組 r、其他 x"
+        },
+        {
+          "key": "B",
+          "text": "擁有者 r、群組 rwx、其他無"
+        },
+        {
+          "key": "C",
+          "text": "所有人 rwx"
+        },
+        {
+          "key": "D",
+          "text": "擁有者 rwx、群組 r-x、其他無權限"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "750 拆解為 7=rwx（擁有者）、5=r-x（群組）、0=無權限（其他），因此是擁有者 rwx、群組 r-x、其他人完全無權限。"
+    },
+    {
+      "id": "q087",
+      "type": "single",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 50",
+      "question": "Windows Core Isolation 的 Memory Integrity 主要屬於？",
+      "options": [
+        {
+          "key": "A",
+          "text": "檔案備份"
+        },
+        {
+          "key": "B",
+          "text": "實體門禁"
+        },
+        {
+          "key": "C",
+          "text": "作業系統防護機制"
+        },
+        {
+          "key": "D",
+          "text": "使用者教育訓練"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "Windows Core Isolation 的 Memory Integrity（HVCI）利用虛擬化隔離核心程式碼完整性檢查，屬於作業系統層級的防護機制，與備份、門禁或教育訓練無關。"
+    },
+    {
+      "id": "q088",
+      "type": "tf",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 88",
+      "question": "RBAC 是將權限與角色關聯，再將角色指派給使用者。",
+      "answer": [
+        "T"
+      ],
+      "explanation": "此敘述正確描述 RBAC 的兩層關係：權限（permission）授予角色（role），角色再指派給使用者，使用者透過角色取得權限。"
+    },
+    {
+      "id": "q089",
+      "type": "tf",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 89",
+      "question": "在 DAC 中，資源擁有者完全不能調整自己的資源權限。",
+      "answer": [
+        "F"
+      ],
+      "explanation": "DAC 的精神正是由資源擁有者自行調整其資源的存取權限（如檔案擁有者可用 chmod 變更權限），故「完全不能調整」為錯誤敘述。"
+    },
+    {
+      "id": "q090",
+      "type": "tf",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 90",
+      "question": "Zero Trust 主張不因使用者位於內網就自動信任。",
+      "answer": [
+        "T"
+      ],
+      "explanation": "Zero Trust 明確摒棄「內網即可信」的邊界思維，任何位置（含內部網路）的存取都須經驗證與授權，並持續監控。"
+    },
+    {
+      "id": "q091",
+      "type": "tf",
+      "chapter": "作業系統安全與存取控制",
+      "source": "questions/Chapter_4.md 題號 91",
+      "question": "Linux 權限 777 符合所有敏感檔案的最小權限原則。",
+      "answer": [
+        "F"
+      ],
+      "explanation": "777 表示擁有者、群組與其他人都具備讀、寫、執行權限，等於對所有人完全開放，嚴重違反最小權限原則，不適合敏感檔案。"
+    },
+    {
+      "id": "q092",
+      "type": "single",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 51",
+      "question": "對稱式加密最主要的特徵是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "加解密使用同一把祕密金鑰"
+        },
+        {
+          "key": "B",
+          "text": "只有公鑰"
+        },
+        {
+          "key": "C",
+          "text": "完全不需金鑰"
+        },
+        {
+          "key": "D",
+          "text": "只能做簽章"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "對稱式加密的定義就是加密與解密共用同一把祕密金鑰；只有公鑰屬於非對稱式，完全不需金鑰或只能做簽章都不正確。"
+    },
+    {
+      "id": "q093",
+      "type": "single",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 52",
+      "question": "加密前可閱讀的資料稱為？",
+      "options": [
+        {
+          "key": "A",
+          "text": "密文"
+        },
+        {
+          "key": "B",
+          "text": "明文"
+        },
+        {
+          "key": "C",
+          "text": "雜湊值"
+        },
+        {
+          "key": "D",
+          "text": "金鑰長度"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "加密前可閱讀的原始資料稱為明文，經加密後才成為密文；雜湊值不可逆，並非可閱讀的原始資料。"
+    },
+    {
+      "id": "q094",
+      "type": "single",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 53",
+      "question": "XOR 運算中 1 XOR 1 的結果是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "2"
+        },
+        {
+          "key": "B",
+          "text": "1"
+        },
+        {
+          "key": "C",
+          "text": "0"
+        },
+        {
+          "key": "D",
+          "text": "不定"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "XOR 在兩輸入相同時結果為 0，因此 1 XOR 1 = 0。"
+    },
+    {
+      "id": "q095",
+      "type": "single",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 54",
+      "question": "XOR 運算中 1 XOR 0 的結果是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "2"
+        },
+        {
+          "key": "C",
+          "text": "錯誤"
+        },
+        {
+          "key": "D",
+          "text": "1"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "XOR 在兩輸入不同時結果為 1，因此 1 XOR 0 = 1。"
+    },
+    {
+      "id": "q096",
+      "type": "single",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 55",
+      "question": "下列何者屬於古典替換式密碼的例子？",
+      "options": [
+        {
+          "key": "A",
+          "text": "Caesar Cipher"
+        },
+        {
+          "key": "B",
+          "text": "AES-GCM"
+        },
+        {
+          "key": "C",
+          "text": "RSA-OAEP"
+        },
+        {
+          "key": "D",
+          "text": "ECDH"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Caesar Cipher 以固定位移替換字母，是典型的古典替換式密碼；AES-GCM 為現代對稱式加密，RSA-OAEP 與 ECDH 則屬非對稱式技術。"
+    },
+    {
+      "id": "q097",
+      "type": "single",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 56",
+      "question": "DES 的主要問題之一是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "無法處理資料"
+        },
+        {
+          "key": "B",
+          "text": "金鑰長度較短、已不適合現代安全需求"
+        },
+        {
+          "key": "C",
+          "text": "不能被硬體實作"
+        },
+        {
+          "key": "D",
+          "text": "是非對稱加密"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "DES 的有效金鑰僅 56 位元，以現代運算能力可被窮舉破解，故已不適用；它仍可處理資料且能以硬體實作，也是對稱式演算法。"
+    },
+    {
+      "id": "q098",
+      "type": "single",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 57",
+      "question": "AES 常見的金鑰長度為？",
+      "options": [
+        {
+          "key": "A",
+          "text": "40、56、64 位元"
+        },
+        {
+          "key": "B",
+          "text": "64、96、128 位元"
+        },
+        {
+          "key": "C",
+          "text": "128、192、256 位元"
+        },
+        {
+          "key": "D",
+          "text": "256、512、1024 位元"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "AES 支援 128、192、256 三種金鑰長度，其他選項所列長度組合並非 AES 規格。"
+    },
+    {
+      "id": "q099",
+      "type": "single",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 58",
+      "question": "ECB 模式的主要缺點是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "一定無法解密"
+        },
+        {
+          "key": "B",
+          "text": "只能加密文字"
+        },
+        {
+          "key": "C",
+          "text": "需要公開私鑰"
+        },
+        {
+          "key": "D",
+          "text": "相同明文區塊可能產生相同密文區塊"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "ECB 對每個區塊獨立加密，相同明文區塊會產生相同密文區塊，因而可能洩漏資料結構與樣式；ECB 本身仍可正常解密。"
+    },
+    {
+      "id": "q100",
+      "type": "single",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 59",
+      "question": "CBC 模式中的 IV 主要用於？",
+      "options": [
+        {
+          "key": "A",
+          "text": "使加密初始化具有變化性"
+        },
+        {
+          "key": "B",
+          "text": "代替所有祕密金鑰"
+        },
+        {
+          "key": "C",
+          "text": "公開明文"
+        },
+        {
+          "key": "D",
+          "text": "當作數位簽章"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "CBC 以 IV 與第一個區塊先做 XOR，使相同明文在不同次加密下產生不同密文，增加初始化的變化性；IV 不是金鑰也不具簽章功能。"
+    },
+    {
+      "id": "q101",
+      "type": "single",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 60",
+      "question": "若加密模式需要同時驗證資料完整性，哪個選項較合適？",
+      "options": [
+        {
+          "key": "A",
+          "text": "ECB"
+        },
+        {
+          "key": "B",
+          "text": "AES-GCM"
+        },
+        {
+          "key": "C",
+          "text": "單純 XOR"
+        },
+        {
+          "key": "D",
+          "text": "Caesar Cipher"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "AES-GCM 屬於 AEAD 模式，在加密同時產生驗證標記以檢查完整性；ECB、單純 XOR 與 Caesar Cipher 都不提供完整性驗證。"
+    },
+    {
+      "id": "q102",
+      "type": "single",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 61",
+      "question": "對稱式加密在大量資料保護上的優點通常是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "一定不需管理金鑰"
+        },
+        {
+          "key": "B",
+          "text": "完全無法被破解"
+        },
+        {
+          "key": "C",
+          "text": "效率較高"
+        },
+        {
+          "key": "D",
+          "text": "自動提供不可否認性"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "對稱式演算法運算量小、速度快，適合保護大量資料；但它仍需金鑰管理，也不提供不可否認性，更非無法破解。"
+    },
+    {
+      "id": "q103",
+      "type": "single",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 62",
+      "question": "加密資料之前最重要的安全考量之一是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "把金鑰放在密文旁邊明文保存"
+        },
+        {
+          "key": "B",
+          "text": "永遠使用固定弱金鑰"
+        },
+        {
+          "key": "C",
+          "text": "公開全部金鑰"
+        },
+        {
+          "key": "D",
+          "text": "妥善保護與管理祕密金鑰"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "金鑰是對稱式加密的安全核心，必須妥善保護與管理；將金鑰與密文並存、使用固定弱金鑰或公開金鑰都會使加密失效。"
+    },
+    {
+      "id": "q104",
+      "type": "tf",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 92",
+      "question": "AES 屬於對稱式密碼演算法。",
+      "answer": [
+        "T"
+      ],
+      "explanation": "AES 加解密使用同一把金鑰，屬於對稱式區塊加密演算法。"
+    },
+    {
+      "id": "q105",
+      "type": "tf",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 93",
+      "question": "ECB 能保證相同明文區塊每次都產生不同密文區塊。",
+      "answer": [
+        "F"
+      ],
+      "explanation": "ECB 對相同明文區塊會產生相同密文區塊，正是其缺點；需要變化性應改用 CBC、CTR 或 GCM 等模式。"
+    },
+    {
+      "id": "q106",
+      "type": "tf",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 94",
+      "question": "XOR 運算滿足 A XOR K XOR K = A。",
+      "answer": [
+        "T"
+      ],
+      "explanation": "XOR 具自我反運算性質，同一金鑰套用兩次會還原原始資料，即 A XOR K XOR K = A。"
+    },
+    {
+      "id": "q107",
+      "type": "tf",
+      "chapter": "對稱式密碼系統",
+      "source": "questions/Chapter_5.md 題號 95",
+      "question": "只要資料經過加密，就不需要管理加密金鑰。",
+      "answer": [
+        "F"
+      ],
+      "explanation": "加密後仍必須管理金鑰的生命週期；金鑰若外洩或遺失，機密性與可用性都會受到影響。"
+    },
+    {
+      "id": "q108",
+      "type": "single",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 63",
+      "question": "若 Alice 要機密地傳訊給 Bob，應使用誰的公鑰加密？",
+      "options": [
+        {
+          "key": "A",
+          "text": "Alice 的公鑰"
+        },
+        {
+          "key": "B",
+          "text": "Alice 的私鑰"
+        },
+        {
+          "key": "C",
+          "text": "Bob 的公鑰"
+        },
+        {
+          "key": "D",
+          "text": "Bob 的私鑰"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "公開金鑰加密的特性是用「收方的公鑰」加密、收方再用自己的私鑰解開，因此 Alice 要機密傳訊給 Bob 必須用 Bob 的公鑰。用 Alice 的私鑰加密只有簽章（來源證明）效果，無法達成機密性。"
+    },
+    {
+      "id": "q109",
+      "type": "single",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 64",
+      "question": "公開金鑰密碼系統最直接改善哪項問題？",
+      "options": [
+        {
+          "key": "A",
+          "text": "大規模祕密金鑰分配"
+        },
+        {
+          "key": "B",
+          "text": "硬碟容量"
+        },
+        {
+          "key": "C",
+          "text": "螢幕解析度"
+        },
+        {
+          "key": "D",
+          "text": "作業系統開機速度"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "對稱式密碼在 n 人互通時需要大量成對金鑰（約 n(n-1)/2 把）且難以安全傳遞，公開金鑰密碼系統讓各方只需公布公鑰，最直接改善的就是大規模祕密金鑰分配問題。其餘選項與密碼學無關。"
+    },
+    {
+      "id": "q110",
+      "type": "single",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 65",
+      "question": "數位簽章主要提供哪項性質？",
+      "options": [
+        {
+          "key": "A",
+          "text": "隱藏全部明文"
+        },
+        {
+          "key": "B",
+          "text": "保證服務永不中斷"
+        },
+        {
+          "key": "C",
+          "text": "自動備份"
+        },
+        {
+          "key": "D",
+          "text": "來源驗證與完整性驗證"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "數位簽章以私鑰簽署、公鑰驗證，可確認訊息確實來自持有私鑰者（來源驗證／不可否認性），並確保內容未被竄改（完整性）。它不提供機密性，所以「隱藏全部明文」是錯的。"
+    },
+    {
+      "id": "q111",
+      "type": "single",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 66",
+      "question": "RSA 的 N 通常由什麼計算而來？",
+      "options": [
+        {
+          "key": "A",
+          "text": "兩個雜湊值相加"
+        },
+        {
+          "key": "B",
+          "text": "兩個質數相乘"
+        },
+        {
+          "key": "C",
+          "text": "一把 AES 金鑰"
+        },
+        {
+          "key": "D",
+          "text": "兩個時間戳相減"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "RSA 的模數 N 是兩個大質數 p、q 的乘積（N = p × q），其安全性建立在大整數因數分解的困難度上。N 與雜湊、AES 金鑰或時間戳無關。"
+    },
+    {
+      "id": "q112",
+      "type": "single",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 67",
+      "question": "在教材 RSA 範例中 p=3、q=11，N 為多少？",
+      "options": [
+        {
+          "key": "A",
+          "text": "14"
+        },
+        {
+          "key": "B",
+          "text": "20"
+        },
+        {
+          "key": "C",
+          "text": "33"
+        },
+        {
+          "key": "D",
+          "text": "121"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "依教材範例 N = p × q = 3 × 11 = 33。選項 14 是相加、20 是 φ(N)=(p-1)(q-1)，皆非 N。"
+    },
+    {
+      "id": "q113",
+      "type": "single",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 68",
+      "question": "在教材 RSA 範例中 φ(N)=20、e=3，d 為多少？",
+      "options": [
+        {
+          "key": "A",
+          "text": "7"
+        },
+        {
+          "key": "B",
+          "text": "3"
+        },
+        {
+          "key": "C",
+          "text": "11"
+        },
+        {
+          "key": "D",
+          "text": "20"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "d 需滿足 e × d ≡ 1 (mod φ(N))，即 3 × 7 = 21 ≡ 1 (mod 20)，故 d = 7。驗算 d=11 得 33 ≡ 13、d=20 得 60 ≡ 0，均不成立。"
+    },
+    {
+      "id": "q114",
+      "type": "single",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 69",
+      "question": "教材 RSA 範例中 M=19、e=3、N=33，密文 C 為多少？",
+      "options": [
+        {
+          "key": "A",
+          "text": "7"
+        },
+        {
+          "key": "B",
+          "text": "19"
+        },
+        {
+          "key": "C",
+          "text": "33"
+        },
+        {
+          "key": "D",
+          "text": "28"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "C = M^e mod N = 19³ mod 33；19³ = 6859，6859 ÷ 33 = 207 餘 28，故 C = 28。反向驗算 28⁷ mod 33 = 19，可正確還原明文。"
+    },
+    {
+      "id": "q115",
+      "type": "single",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 70",
+      "question": "真實 RSA 加密不宜直接使用 textbook RSA，主要原因是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "RSA 不能處理整數"
+        },
+        {
+          "key": "B",
+          "text": "需使用 OAEP 等安全填充機制"
+        },
+        {
+          "key": "C",
+          "text": "公開金鑰必須保密"
+        },
+        {
+          "key": "D",
+          "text": "RSA 只能用於壓縮"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "textbook RSA 是確定性加密且具乘法同態性，攻擊者可透過比對或選擇密文推導明文，因此實務上須搭配 OAEP 等隨機化填充機制。RSA 本就用於整數運算，且公鑰本來就可公開，故 A、C 錯誤。"
+    },
+    {
+      "id": "q116",
+      "type": "single",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 71",
+      "question": "ElGamal 加密同一明文可產生不同密文，主要因為？",
+      "options": [
+        {
+          "key": "A",
+          "text": "固定使用相同密鑰"
+        },
+        {
+          "key": "B",
+          "text": "完全不需金鑰"
+        },
+        {
+          "key": "C",
+          "text": "每次使用新的隨機值"
+        },
+        {
+          "key": "D",
+          "text": "使用明文當私鑰"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "ElGamal 加密時每次會取一個新的隨機值 k 來產生暫時性金鑰，因此同一明文每次加密的密文都不同（機率式加密）。這正是它不同於固定輸出的確定性加密之處。"
+    },
+    {
+      "id": "q117",
+      "type": "single",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 72",
+      "question": "Hybrid Encryption 適合大型檔案的原因是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "用對稱式演算法加密資料、公開金鑰機制保護或協商會談金鑰"
+        },
+        {
+          "key": "B",
+          "text": "所有資料都直接 RSA 加密"
+        },
+        {
+          "key": "C",
+          "text": "不使用任何金鑰"
+        },
+        {
+          "key": "D",
+          "text": "只用雜湊值代替密文"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "混合式加密用對稱式演算法（如 AES）處理大量資料以取得效率，再以公開金鑰機制（RSA 或 DH）保護或協商該對稱會談金鑰。直接用 RSA 加密全部資料效率極差，故 B 錯誤。"
+    },
+    {
+      "id": "q118",
+      "type": "single",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 73",
+      "question": "Diffie–Hellman 的主要功能是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "直接產生數位簽章"
+        },
+        {
+          "key": "B",
+          "text": "檢查硬碟"
+        },
+        {
+          "key": "C",
+          "text": "備份資料庫"
+        },
+        {
+          "key": "D",
+          "text": "協商共享祕密"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "explanation": "Diffie–Hellman 是一種金鑰交換協定，讓雙方在不安全通道上協商出共享祕密，本身不做加解密也不產生簽章。因此「直接產生數位簽章」不正確。"
+    },
+    {
+      "id": "q119",
+      "type": "single",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 74",
+      "question": "未經身分驗證的 Diffie–Hellman 可能遭遇什麼攻擊？",
+      "options": [
+        {
+          "key": "A",
+          "text": "實體火災"
+        },
+        {
+          "key": "B",
+          "text": "中間人攻擊"
+        },
+        {
+          "key": "C",
+          "text": "磁碟碎片化"
+        },
+        {
+          "key": "D",
+          "text": "資料壓縮"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "未經身分驗證的 DH 無法確認對方身分，攻擊者可在中間分別與雙方建立共享金鑰，即中間人攻擊（MITM）。其餘選項屬實體或系統層面問題，與此協定弱點無關。"
+    },
+    {
+      "id": "q120",
+      "type": "single",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 75",
+      "question": "Shamir Secret Sharing 的 (3,5) 代表什麼？",
+      "options": [
+        {
+          "key": "A",
+          "text": "需 5 份才能重建且只有 3 份"
+        },
+        {
+          "key": "B",
+          "text": "3 人各有 5 把鑰匙"
+        },
+        {
+          "key": "C",
+          "text": "5 份分享中任意 3 份可重建祕密"
+        },
+        {
+          "key": "D",
+          "text": "每份祕密長 3 位元"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "Shamir 門檻分享記為 (k, n)，表示把祕密拆成 n 份分享，任取其中 k 份即可重建，少於 k 份則無法取得任何資訊。所以 (3,5) 是 5 份中任意 3 份可重建。"
+    },
+    {
+      "id": "q121",
+      "type": "tf",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 96",
+      "question": "公開金鑰可以公開，但對應私鑰必須保密。",
+      "answer": [
+        "T"
+      ],
+      "explanation": "公開金鑰密碼系統的安全性正是建立在「公鑰可公開、私鑰必須嚴格保密」之上；私鑰外洩即等同身分被冒用、機密被解開。"
+    },
+    {
+      "id": "q122",
+      "type": "tf",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 97",
+      "question": "數位簽章本身的主要目的就是隱藏文件內容。",
+      "answer": [
+        "F"
+      ],
+      "explanation": "數位簽章提供來源驗證、完整性與不可否認性，並不隱藏文件內容；若需保密仍須另外加密。因此「主要目的就是隱藏文件內容」為錯誤敘述。"
+    },
+    {
+      "id": "q123",
+      "type": "tf",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 98",
+      "question": "Diffie–Hellman 若缺乏身分驗證，可能遭中間人攻擊。",
+      "answer": [
+        "T"
+      ],
+      "explanation": "DH 本身只協商共享祕密而不驗證雙方身分，攻擊者可在中間替換金鑰形成兩段連線，即中間人攻擊，故敘述正確。"
+    },
+    {
+      "id": "q124",
+      "type": "tf",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 99",
+      "question": "Shamir (3,5) 門檻分享中，任意兩份分享即可重建祕密。",
+      "answer": [
+        "F"
+      ],
+      "explanation": "(3,5) 門檻分享需至少 3 份才能重建，只有 2 份時資訊量不足，無法還原祕密，因此敘述錯誤。"
+    },
+    {
+      "id": "q125",
+      "type": "tf",
+      "chapter": "公開金鑰密碼系統",
+      "source": "questions/Chapter_6.md 題號 100",
+      "question": "Hybrid Encryption 通常以對稱式加密處理大量資料。",
+      "answer": [
+        "T"
+      ],
+      "explanation": "混合式加密以對稱式演算法處理大量資料本體，公開金鑰僅用於保護或協商短小的對稱金鑰，故敘述正確。"
+    }
+  ]
+}
