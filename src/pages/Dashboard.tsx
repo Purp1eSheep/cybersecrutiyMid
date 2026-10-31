@@ -97,10 +97,12 @@ export function Dashboard({
 
   function toggleChapter(chapter: string) {
     setChapters((previous) => {
-      const base = previous === 'all' ? allChapters : previous;
-      const next = base.includes(chapter)
-        ? base.filter((item) => item !== chapter)
-        : [...base, chapter];
+      if (previous === 'all') {
+        return [chapter];
+      }
+      const next = previous.includes(chapter)
+        ? previous.filter((item) => item !== chapter)
+        : [...previous, chapter];
 
       if (next.length === 0 || next.length === allChapters.length) return 'all';
       return next;

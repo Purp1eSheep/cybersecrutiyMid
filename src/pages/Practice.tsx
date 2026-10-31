@@ -52,37 +52,40 @@ export function Practice({
   const currentResult = currentId ? session.results[currentId] : undefined;
 
   const [picked, setPicked] = useState<string[]>([]);
-  const [lastOptionClick, setLastOptionClick] = useState<{
+  const lastOptionSelectRef = useRef<{
     key: string;
     time: number;
     questionId: string;
   } | null>(null);
+  const lastSubmitTimeRef = useRef<number>(0);
   const [justAnsweredId, setJustAnsweredId] = useState<string | null>(null);
   const [navOpen, setNavOpen] = useState(false);
   const [navHeight, setNavHeight] = useState<number>();
   const questionCardRef = useRef<HTMLElement>(null);
 
   const submitAnswer = (id: string, selected: string[]) => {
+    lastSubmitTimeRef.current = Date.now();
     setJustAnsweredId(id);
     onAnswer(id, selected);
   };
 
-  const handleOptionClick = (key: string) => {
+  const selectOption = (key: string) => {
     const now = Date.now();
+    const last = lastOptionSelectRef.current;
     if (
       !revealed &&
-      lastOptionClick !== null &&
-      lastOptionClick.questionId === question?.id &&
-      lastOptionClick.key === key &&
-      now - lastOptionClick.time <= 500
+      last !== null &&
+      last.questionId === question?.id &&
+      last.key === key &&
+      now - last.time <= 500
     ) {
       submitAnswer(question!.id, [key]);
-      setLastOptionClick(null);
+      lastOptionSelectRef.current = null;
       return;
     }
 
     setPicked([key]);
-    setLastOptionClick({ key, time: now, questionId: question!.id });
+    lastOptionSelectRef.current = { key, time: now, questionId: question!.id };
   };
 
   useEffect(() => {
@@ -106,6 +109,7 @@ export function Practice({
 
   useEffect(() => {
     setJustAnsweredId(null);
+    lastOptionSelectRef.current = null;
   }, [currentId]);
 
   const displayKeys = useMemo(() => {
@@ -170,29 +174,53 @@ export function Practice({
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.metaKey || event.ctrlKey || event.altKey) return;
+      if (event.repeat) return;
       const target = event.target as HTMLElement | null;
       if (target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName)) {
         return;
       }
 
+      const isSubmitOrNextKey =
+        event.key === 'Enter' || event.key === ' ' || event.code === 'Space';
+
       if (!revealed) {
+        let optionIndex = -1;
         const optionNumber = Number(event.key);
         if (
           Number.isInteger(optionNumber) &&
           optionNumber >= 1 &&
           optionNumber <= displayKeys.length
         ) {
+          optionIndex = optionNumber - 1;
+        } else if (question.type === 'tf') {
+          const upper = event.key.toUpperCase();
+          if (upper === 'T') optionIndex = 0;
+          else if (upper === 'F') optionIndex = 1;
+        } else if (event.key.length === 1) {
+          const code = event.key.toUpperCase().charCodeAt(0);
+          if (code >= 65 && code < 65 + displayKeys.length) {
+            optionIndex = code - 65;
+          }
+        }
+
+        if (optionIndex >= 0 && optionIndex < displayKeys.length) {
           event.preventDefault();
-          setPicked([displayKeys[optionNumber - 1]]);
+          selectOption(displayKeys[optionIndex]);
           return;
         }
-        if (event.key === 'Enter' && picked.length > 0) {
+
+        if (isSubmitOrNextKey) {
           event.preventDefault();
-          submitAnswer(question.id, picked);
+          if (picked.length > 0) {
+            submitAnswer(question.id, picked);
+          }
           return;
         }
-      } else if (event.key === 'Enter') {
+      } else if (isSubmitOrNextKey) {
         event.preventDefault();
+        if (Date.now() - lastSubmitTimeRef.current < 250) {
+          return;
+        }
         goNext();
         return;
       }
@@ -337,7 +365,7 @@ export function Practice({
                         key={key}
                         type="button"
                         disabled={revealed}
-                        onClick={() => handleOptionClick(key)}
+                        onClick={() => selectOption(key)}
                         className={`flex flex-col items-center gap-1.5 rounded-2xl border p-5 transition ${optionStateClass(
                           isAnswer,
                           isPicked,
@@ -373,7 +401,7 @@ export function Practice({
                         key={key}
                         type="button"
                         disabled={revealed}
-                        onClick={() => handleOptionClick(key)}
+                        onClick={() => selectOption(key)}
                         className={`flex w-full items-start gap-3 rounded-2xl border p-4 text-left transition ${optionStateClass(
                           isAnswer,
                           isPicked,
